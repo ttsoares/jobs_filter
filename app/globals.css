@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 15px;
+}
+
+.teste {
+  color: hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%);
+  color: hsl(180, 31%, 95%);
+  color: hsl(180, 8%, 52%);
+  color: hsl(180, 14%, 20%);
+}
+
+/*
+        primary: "hsl(180, 29%, 50%)",
+        light_bg: "hsl(180, 52%, 96%)",
+        filter: "hsl(180, 31%, 95%)",
+        dark_cyan: "hsl(180, 8%, 52%)",
+        vdark_cyan: "hsl(180, 14%, 20%)",
+*/
