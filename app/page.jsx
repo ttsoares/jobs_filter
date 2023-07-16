@@ -90,7 +90,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex relative min-h-screen flex-col items-center bg-cyan-200">
+    <main className="flex relative min-h-screen flex-col items-center bg-light_bg">
       <header className="w-full h-32 mb-16">
         <div className="w-full h-32 bg-bg-mob md:bg-bg-dsk bg-no-repeat bg-cover bg-blend-multiply bg-primary"></div>
       </header>
@@ -106,10 +106,10 @@ export default function Home() {
                   </p>
                   <div
                     onClick={() => moreFilters(index)}
-                    className="mb-4 hover:cursor-pointer relative w-5 h-5 p-3 bg-cyan-500 mr-4"
+                    className="mb-4 hover:cursor-pointer relative w-5 h-6 bg-primary mr-4"
                   >
                     {secondaryFiltersUI.current[index] && (
-                      <span className="text-white absolute text-2xl font-bold top-0 left-1">
+                      <span className="text-white absolute text-lg font-bold top-0 left-0 pl-1 pr-1 bg-vdark_cyan">
                         X
                       </span>
                     )}

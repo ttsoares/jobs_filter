@@ -4,7 +4,7 @@ const Card = ({ person, filter, skills = [] }) => {
   return (
     <div
       className={`flex flex-col h-[400px] w-80 p-4 mb-16 bg-white shadow-xl border-l-4  rounded-lg md:mb-4 md:h-40 md:justify-between md:items-center md:w-5/6  ${
-        person.postedAt.split(" ")[0] === "1d" ? "border-cyan-700" : ""
+        person.postedAt.split(" ")[0] === "1d" ? "border-primary" : ""
       }`}
     >
       <div className="flex flex-col h-60  relative items-start md:w-full md:flex-row md:justify-between md:align-middle md:items-center md:h-28  ">
@@ -24,13 +24,13 @@ const Card = ({ person, filter, skills = [] }) => {
               <p className="p-1 text-cyan-600 font-bold">{person.company}</p>
 
               {person.new && (
-                <p className="pl-2 pt-1 pr-2 mr-2 bg-cyan-400 rounded-full text-white">
+                <p className="pl-2 pt-1 pr-2 mr-2 bg-primary rounded-full text-white">
                   NEW!
                 </p>
               )}
 
               {person.featured && (
-                <p className="pl-2 pt-1 pr-2  bg-black rounded-full text-white">
+                <p className="pl-2 pt-1 pr-2  bg-vdark_cyan rounded-full text-white">
                   FEATURED
                 </p>
               )}
