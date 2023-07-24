@@ -52,7 +52,7 @@ export default function Home() {
   // ind for the personResumeButFirst
   function moreFilters(ind) {
     const skillToAdd = personResumeButFirst[ind];
-    let filteredData; // will recive the result of filtering data
+    let filteredData; // will receive the result of filtering data
 
     // if the secondary skill already is selected : removed it from the filter
     if (skillsFilter.current.includes(skillToAdd)) {
